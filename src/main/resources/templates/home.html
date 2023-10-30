@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="fragments/header :: header">
+    <title>Hello</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="container">
+    <div th:replace="fragments/bodyHeader :: bodyHeader" />
+    <div class="jumbotron">
+        <h1>MENU</h1>
+        <div class="category">
+            <p class="lead">Members</p>
+            <div class="buttons">
+                <a class="btn btn-lg btn-secondary" href="/members/new">Add a New Member</a>
+                <a class="btn btn-lg btn-secondary" href="/members">All Members</a>
+            </div>
+        </div>
+        <div class="category">
+            <p class="lead">Items</p>
+            <div class="buttons">
+                <a class="btn btn-lg btn-dark" href="/items/new">Add a New Item</a>
+                <a class="btn btn-lg btn-dark" href="/items">All Items</a>
+            </div>
+        </div>
+        <div class="category">
+            <p class="lead">Order</p>
+            <div class="buttons">
+                <a class="btn btn-lg btn-info" href="/order">Create a New Order</a>
+                <a class="btn btn-lg btn-info" href="/orders">All Orders</a>
+            </div>
+        </div>
+    </div>
+    <div th:replace="fragments/footer :: footer" />
+</div> <!-- /container -->
+</body>
+</html>
