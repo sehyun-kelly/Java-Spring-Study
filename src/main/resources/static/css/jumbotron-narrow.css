@@ -89,3 +89,7 @@ body {
     padding: 0.5rem 0;
     margin-bottom: 1rem;
 }
+
+.form-group{
+    margin: 1rem 0;
+}
