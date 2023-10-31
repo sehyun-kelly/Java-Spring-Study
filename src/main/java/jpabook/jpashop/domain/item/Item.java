@@ -32,7 +32,7 @@ public abstract class Item {
     // Business Logics - Inventory
 
     /**
-     * Increast Inventory Count
+     * Increase Inventory Count
      */
     public void addStock(int stockQuantity) {
         this.stockQuantity += stockQuantity;
