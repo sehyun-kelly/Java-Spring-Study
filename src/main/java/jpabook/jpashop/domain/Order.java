@@ -8,7 +8,6 @@ import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 import static jakarta.persistence.FetchType.LAZY;
@@ -85,9 +84,9 @@ public class Order {
     }
 
     // Search Logic
-    public int getTotalPrice() {
+    public double getTotalPrice() {
         return orderItems.stream()
-                .mapToInt(OrderItem::getTotalPrice)
+                .mapToDouble(OrderItem::getTotalPrice)
                 .sum();
     }
 }

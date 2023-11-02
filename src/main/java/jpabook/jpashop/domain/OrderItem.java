@@ -26,11 +26,11 @@ public class OrderItem {
     @JoinColumn(name = "order_id")
     private Order order;
 
-    private int orderPrice;
+    private float orderPrice;
     private int count;
 
     // Creation Method
-    public static OrderItem createOrderItem(Item item, int orderPrice, int count) {
+    public static OrderItem createOrderItem(Item item, float orderPrice, int count) {
         OrderItem orderItem = new OrderItem();
         orderItem.setItem(item);
         orderItem.setOrderPrice(orderPrice);
@@ -45,7 +45,7 @@ public class OrderItem {
         getItem().addStock(count);
     }
 
-    public int getTotalPrice() {
+    public float getTotalPrice() {
         return getOrderPrice() * getCount();
     }
 }
