@@ -1,7 +1,7 @@
 # Online Bookstore Admin Dashboard | Java Spring Boot
 This project is to improve my understanding in **Spring Boot and Spring Boot JPA**.
 
-[Hosted on AWS](http://ec2-54-176-91-14.us-west-1.compute.amazonaws.com/)
+[Hosted on AWS](https://springdashboard.shop/)
 
 <img width="891" alt="Screenshot 2023-11-02 at 15 39 23" src="https://github.com/sehyun-kelly/Leetcode-Practice/assets/89621420/e4508af4-0903-41e5-bd3f-ad432ea0f23a">
 
